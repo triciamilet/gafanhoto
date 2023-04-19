@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DCEFC3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* até 1024 - celular e tablets*/
+@media screen and (max-width: 767px) {
+
+    #wrapper {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    nav {
+        width: auto;
+        height: 200px;
+    }
+    section {
+        width: auto;
+        height: 65vh;
+    }
+
+                                                                                   /* CODIGOS RELACIONADOS À SEGUNDA TELA */
+
+
+    #ods {
+        width: 80vw;
+        height: 70vh;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #odsintro {
+        text-align: right;
+        color: #2F7740;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-left: 17vw;
+        padding-top: 10vh;
+        float: right;
+
+    }
+    
+    /* como centralizar isso */
+    h2 {
+
+        font-size: 32px;
+        text-align: center;
+    }
+
+    footer {
+        color: #DCEFC3;
+        background-color: #2F7740;
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 300px;
+    }
+
+    div.footer {
+
+        text-align: left;
+        padding-left: 12vw;
+        padding-top: 20px;
+    }
+
+    div.ftab {
+
+        width: 40vw;
+        height: 130px;
+        float: left;
+        display: block;
+
+    }
+
+    h6 {
+
+        font-weight: bold;
+        font-size: 12pt;
+
+    }
+
+
+    nav {
+        position: fixed;
+        z-index: 8;
+        width: 100vw;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-color: #DCEFC3;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #brand {
+
+        float: left;
+        display: fixed;
+        width: 10vw;
+        height: 15vh; 
+        padding-left: 10%;
+    }
+
+    #logo {
+
+        z-index: 10;
+        border-radius: 4px;
+        width: 40px;
+        position: fixed;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    
+                                                                                      /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
+    #apresentacao {
+        color: #2F7740;
+        position: relative;
+        width: 70vw;
+        height: 50vh;
+        padding-top: 50vh;
+        padding-left: 15vw;
+        float: left;
+    }
+    
+        h1 {
+            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 30px;
+        }
+
+        p {
+
+            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 22px;
+
+        }
+
+        section.inicio {
+            width: 80vw;
+            height: 95vh;
+        }
+
+        div.baixo {
+
+            color: #DCEFC3;
+            background-color: #DCEFC3;
+            border-radius: 5%;
+            width: 70vw;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            margin-top: 10px;
+    
+        }
+
+        img.baixo {
+            height: 20px;
+            width: 20px;
+            background-color: #ebedec;
+            
+        }
+    
+    #bola {
+
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+        background-color: white;
+        aspect-ratio: 1 / 1;
+    }
+
+
+    #gafanhoto_um {
+
+        width: 130px;
+        height: auto;
+        position: relative;
+        aspect-ratio: auto;
+
+    }
+}
+
+a:link.botao{
+    color: #DCEFC3;
+    text-decoration: none;
+}
+a:visited.botao{
+    color: #DCEFC3;
+    text-decoration: none;
+}
+
+p.claro {
+    
+    color: #DCEFC3;
+    background-color: #2F7740;
+    border-radius: 5%;
+    width: 70vw;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin-top: 45px;
+}
+
+                                                                                   /* CODIGOS RELACIONADOS À NEWSLETTER */
+
+
+    section.newsletter {
+
+        background-color: #2F7740;
+        width: 100%;
+        height: 150px;
+        clear: both;
+
+    }
+
+    h3 {
+        width: 30vw;
+        color: #DCEFC3;
+        text-align: left;
+        padding-top: 25px;
+
+    }
+
+    p.newsletter {
+        width: 30vw;
+        color: #DCEFC3;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+
+    /* pq q essa praga nao ta floatando*/
+
+    div.convite {
+
+        display: block;
+        height: 100px;
+        float: left;
+        width: 25vw;
+        margin-left: 15vw;
+
+    }
+    div.forma {
+        display: block;
+        width: 35vw;
+        height: 100px;
+        margin-right: 15vw;
+        text-align: right;
+        float: right;
+        color: #DCEFC3;
+        padding-top: 40px;
+
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 24px;
+        padding-bottom: 5px;
+
+    }
+
+    input#email {
+
+        width: 60%;
+        margin-top: 10px
+
+    }
+
+
+    #mundial {
+        width: 80vw;
+        height: 70vh;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #mundtexto {
+        text-align: right;
+        color: #2F7740;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-left: 17vw;
+        padding-top: 10vh;
+        float: right;
+
+    }
+
+#subir {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #2F7740;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+
+/* 1024 em diante - desktops ou qualquer outras telas maiores */
+@media screen and (min-width:767px) {
+    
+    #wrapper {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+    }
+
+                                                                                   /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
+    nav {
+        position: relative;
+        width: 100vw;
+        height: 80px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #brand {
+
+        float: left;
+        display: block;
+        width: 10vw;
+        height: 10vh; 
+        padding-left: 10%;
+    }
+
+    #logo {
+
+        z-index: 10;
+        border-radius: 4px;
+        width: 50px;
+        position: absolute;
+        left: 50px;
+        top: 15px;
+        
+    }
+
+        ul {
+            padding: 15%;
+            padding-top: 20px;
+            text-align: center;
+            list-style-type: none;
+            overflow: hidden;
+            margin-right: 10%;
+        }
+        
+          
+        li {
+            float: left;
+            display: block;
+          }
+          
+          li a {
+            display: block;
+            color: #2F7740 ;
+            text-align: center;
+            padding: 12px;
+            margin-left: 20px;
+            text-decoration: none;
+          }
+
+          .menu{
+            display: flex;
+        }
+
+        ul li:last-child {
+
+            position: absolute;
+            right: 10%;
+
+        }
+
+    #subir {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        background-color: #2F7740;
+        border-radius: 100%;
+        z-index: 10;
+    }
+                                                                                  /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
+    #apresentacao {
+        color: #2F7740;
+        position: relative;
+        width: 25vw;
+        height: 200px;
+        padding-left: 17vw;
+        padding-top: 15vh;
+        float: left;
+    }
+    
+        h1 {
+            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 30px;
+        }
+
+        p {
+
+            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 22px;
+
+        }
+
+        section.inicio {
+            width: 80vw;
+            height: 95vh;
+        }
+
+    #bola {
+
+        width: 25vw;
+        height: auto;
+        position: relative;
+        margin-top: 100px;
+        margin-left: 10vw;
+        float: right;
+        border-radius: 50%;
+        background-color: white;
+        display: display-flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1 / 1;
+    }
+
+
+    #gafanhoto_um {
+
+        width: 15vw;
+        height: auto;
+        position: relative;
+        aspect-ratio: auto;
+
+    }
+
+    a:link.botao{
+        color: #DCEFC3;
+        text-decoration: none;
+    }
+    a:visited.botao{
+        color: #DCEFC3;
+        text-decoration: none;
+    }
+
+    /* COMO QUE FAZ PRA CENTRALIZAR NESSE FUNDOOOOOOOOOO */
+
+    p.claro {
+        
+        color: #DCEFC3;
+        background-color: #2F7740;
+        border-radius: 5%;
+        width: 25vw;
+        height: 45px;
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        margin-top: 45px;
+    }
+
+    div.baixo {
+
+        color: #DCEFC3;
+        background-color: #DCEFC3;
+        border-radius: 5%;
+        width: 25vw;
+        height: 30px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+    img.baixo {
+        height: 20px;
+        width: 20px;
+        background-color: #ebedec;
+    }
+       
+                                                                                /* CODIGOS RELACIONADOS À SEGUNDA TELA */
+
+
+    #ods {
+        width: 80vw;
+        height: 70vh;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #odsintro {
+        text-align: right;
+        color: #2F7740;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-left: 17vw;
+        padding-top: 10vh;
+        float: right;
+
+    }
+    
+    /* como centralizar isso */
+    h2 {
+
+        font-size: 32px;
+        text-align: center;
+    }
+
+                                                                                   /* CODIGOS RELACIONADOS À NEWSLETTER */
+
+
+    section.newsletter {
+
+        background-color: #2F7740;
+        width: 100%;
+        height: 150px;
+        clear: both;
+
+    }
+
+    h3 {
+        width: 30vw;
+        color: #DCEFC3;
+        text-align: left;
+        padding-top: 25px;
+
+    }
+
+    p.newsletter {
+        width: 30vw;
+        color: #DCEFC3;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+
+    /* pq q essa praga nao ta floatando*/
+
+    div.convite {
+
+        display: block;
+        height: 100px;
+        float: left;
+        width: 25vw;
+        margin-left: 15vw;
+
+    }
+    div.forma {
+        display: block;
+        width: 35vw;
+        height: 100px;
+        margin-right: 15vw;
+        text-align: right;
+        float: right;
+        color: #DCEFC3;
+        padding-top: 40px;
+
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 24px;
+        padding-bottom: 5px;
+
+    }
+
+    input#email {
+
+        width: 60%;
+        margin-top: 10px
+
+    }
+
+                                                                               /* CODIGOS RELACIONADOS À TERCEIRA TELA */
+
+    #mundial {
+        width: 80vw;
+        height: 70vh;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #mundtexto {
+        text-align: right;
+        color: #2F7740;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-left: 17vw;
+        padding-top: 10vh;
+        float: right;
+
+    }
+
+    aside {
+        width: 20vw;
+        height: 70vh;
+        float: left;
+    }
+
+                                                                                   /* CODIGOS RELACIONADOS AO FOOTER */
+
+    footer {
+        color: #DCEFC3;
+        background-color: #2F7740;
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 22vh;
+    }
+
+    div.footer {
+
+        text-align: left;
+        padding-left: 17vw;
+        padding-top: 20px;
+    }
+
+    div.ftab {
+
+        width: 18vw;
+        height: 13vh;
+        float: left;
+
+    }
+
+    h6 {
+
+        font-weight: bold;
+        font-size: 12pt;
+
+    }
+
+}
