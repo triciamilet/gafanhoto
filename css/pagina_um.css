@@ -26,16 +26,27 @@ body {
         width: auto;
         height: 200px;
     }
+
     section {
         width: auto;
         height: 65vh;
     }
 
-                                                                                   /* CODIGOS RELACIONADOS À SEGUNDA TELA */
+    /* CODIGOS RELACIONADOS À SEGUNDA TELA */
 
+    #grama {
+        
+        position: relative;
+        display: block;
+        width: 100%;
+        clear: both;
+        height: 20vh;
+        background-color: rgb(151, 183, 142);
+
+    }
 
     #ods {
-        width: 80vw;
+        width: 100%;
         height: 70vh;
         margin-right: auto;
         margin-left: auto;
@@ -46,14 +57,15 @@ body {
         text-align: right;
         color: #2F7740;
         position: relative;
-        width: 100%;
+        width: 75vw;
         height: 100%;
-        padding-left: 17vw;
+        padding-left: 12vw;
+        padding-right: 13vw;
         padding-top: 10vh;
         float: right;
 
     }
-    
+
     /* como centralizar isso */
     h2 {
 
@@ -110,7 +122,7 @@ body {
         float: left;
         display: fixed;
         width: 10vw;
-        height: 15vh; 
+        height: 15vh;
         padding-left: 10%;
     }
 
@@ -124,10 +136,10 @@ body {
         left: 0;
         right: 0;
         margin: auto;
-        
+
     }
-    
-                                                                                      /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
+
+    /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
     #apresentacao {
         color: #2F7740;
         position: relative;
@@ -137,50 +149,50 @@ body {
         padding-left: 15vw;
         float: left;
     }
-    
-        h1 {
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 30px;
-        }
 
-        p {
+    h1 {
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 30px;
+    }
 
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 22px;
+    p {
 
-        }
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 22px;
 
-        section.inicio {
-            width: 80vw;
-            height: 95vh;
-        }
+    }
 
-        div.baixo {
+    section.inicio {
+        width: 80vw;
+        height: 95vh;
+    }
 
-            color: #DCEFC3;
-            background-color: #DCEFC3;
-            border-radius: 5%;
-            width: 70vw;
-            height: 30px;
-            display: inline-block;
-            text-align: center;
-            margin-top: 10px;
-    
-        }
+    div.baixo {
 
-        img.baixo {
-            height: 20px;
-            width: 20px;
-            background-color: #ebedec;
-            
-        }
-    
+        color: #DCEFC3;
+        background-color: #DCEFC3;
+        border-radius: 5%;
+        width: 70vw;
+        height: 30px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+
+    }
+
+    img.baixo {
+        height: 20px;
+        width: 20px;
+        background-color: #ebedec;
+
+    }
+
     #bola {
 
         width: 200px;
         height: 200px;
         position: absolute;
-        top: 170px;
+        top: 14vh;
         left: 0;
         right: 0;
         margin: auto;
@@ -200,118 +212,120 @@ body {
     }
 }
 
-a:link.botao{
+a:link.botao {
     color: #DCEFC3;
     text-decoration: none;
 }
-a:visited.botao{
+
+a:visited.botao {
     color: #DCEFC3;
     text-decoration: none;
 }
 
 p.claro {
-    
+
     color: #DCEFC3;
     background-color: #2F7740;
     border-radius: 5%;
     width: 70vw;
     height: 25px;
+    vertical-align: middle;
     display: inline-block;
     text-align: center;
     padding: 5px;
     margin-top: 45px;
 }
 
-                                                                                   /* CODIGOS RELACIONADOS À NEWSLETTER */
+/* CODIGOS RELACIONADOS À NEWSLETTER */
 
 
-    section.newsletter {
+section.newsletter {
 
-        background-color: #2F7740;
-        width: 100%;
-        height: 150px;
-        clear: both;
+    background-color: #2F7740;
+    width: 100%;
+    height: 150px;
+    clear: both;
 
-    }
+}
 
-    h3 {
-        width: 30vw;
-        color: #DCEFC3;
-        text-align: left;
-        padding-top: 25px;
+h3 {
+    width: 30vw;
+    color: #DCEFC3;
+    text-align: left;
+    padding-top: 25px;
 
-    }
+}
 
-    p.newsletter {
-        width: 30vw;
-        color: #DCEFC3;
-        width: 100%;
-        padding-bottom: 15px;
-    }
-    
-
-    /* pq q essa praga nao ta floatando*/
-
-    div.convite {
-
-        display: block;
-        height: 100px;
-        float: left;
-        width: 25vw;
-        margin-left: 15vw;
-
-    }
-    div.forma {
-        display: block;
-        width: 35vw;
-        height: 100px;
-        margin-right: 15vw;
-        text-align: right;
-        float: right;
-        color: #DCEFC3;
-        padding-top: 40px;
-
-    }
-
-    label {
-        font-weight: bold;
-        font-size: 24px;
-        padding-bottom: 5px;
-
-    }
-
-    input#email {
-
-        width: 60%;
-        margin-top: 10px
-
-    }
+p.newsletter {
+    width: 30vw;
+    color: #DCEFC3;
+    width: 100%;
+    padding-bottom: 15px;
+}
 
 
-    #mundial {
-        width: 80vw;
-        height: 70vh;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
+/* pq q essa praga nao ta floatando*/
 
-    #mundtexto {
-        text-align: right;
-        color: #2F7740;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding-left: 17vw;
-        padding-top: 10vh;
-        float: right;
+div.convite {
 
-    }
+    display: block;
+    height: 100px;
+    float: left;
+    width: 25vw;
+    margin-left: 15vw;
+
+}
+
+div.forma {
+    display: block;
+    width: 35vw;
+    height: 100px;
+    margin-right: 15vw;
+    text-align: right;
+    float: right;
+    color: #DCEFC3;
+    padding-top: 40px;
+
+}
+
+label {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 5px;
+
+}
+
+input#email {
+
+    width: 60%;
+    margin-top: 10px
+}
+
+
+#mundial {
+    width: 80vw;
+    height: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#mundtexto {
+    text-align: right;
+    color: #2F7740;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 17vw;
+    padding-top: 10vh;
+    float: right;
+
+}
 
 #subir {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 20px;
+    right: 20px;
     width: 50px;
     height: 50px;
     background-color: #2F7740;
@@ -322,14 +336,14 @@ p.claro {
 
 /* 1024 em diante - desktops ou qualquer outras telas maiores */
 @media screen and (min-width:767px) {
-    
+
     #wrapper {
         width: 100%;
         height: 100vh;
         position: absolute;
     }
 
-                                                                                   /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
+    /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
     nav {
         position: relative;
         width: 100vw;
@@ -342,7 +356,7 @@ p.claro {
         float: left;
         display: block;
         width: 10vw;
-        height: 10vh; 
+        height: 10vh;
         padding-left: 10%;
     }
 
@@ -354,43 +368,43 @@ p.claro {
         position: absolute;
         left: 50px;
         top: 15px;
-        
+
     }
 
-        ul {
-            padding: 15%;
-            padding-top: 20px;
-            text-align: center;
-            list-style-type: none;
-            overflow: hidden;
-            margin-right: 10%;
-        }
-        
-          
-        li {
-            float: left;
-            display: block;
-          }
-          
-          li a {
-            display: block;
-            color: #2F7740 ;
-            text-align: center;
-            padding: 12px;
-            margin-left: 20px;
-            text-decoration: none;
-          }
+    ul {
+        padding: 15%;
+        padding-top: 20px;
+        text-align: center;
+        list-style-type: none;
+        overflow: hidden;
+        margin-right: 10%;
+    }
 
-          .menu{
-            display: flex;
-        }
 
-        ul li:last-child {
+    li {
+        float: left;
+        display: block;
+    }
 
-            position: absolute;
-            right: 10%;
+    li a {
+        display: block;
+        color: #2F7740;
+        text-align: center;
+        padding: 12px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
 
-        }
+    .menu {
+        display: flex;
+    }
+
+    ul li:last-child {
+
+        position: absolute;
+        right: 10%;
+
+    }
 
     #subir {
         position: fixed;
@@ -402,33 +416,34 @@ p.claro {
         border-radius: 100%;
         z-index: 10;
     }
-                                                                                  /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
+
+    /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
     #apresentacao {
         color: #2F7740;
         position: relative;
         width: 25vw;
-        height: 200px;
+        height: 60vh;
         padding-left: 17vw;
         padding-top: 15vh;
         float: left;
     }
-    
-        h1 {
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 30px;
-        }
 
-        p {
+    h1 {
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 30px;
+    }
 
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 22px;
+    p {
 
-        }
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 22px;
 
-        section.inicio {
-            width: 80vw;
-            height: 95vh;
-        }
+    }
+
+    section.inicio {
+        width: 100%;
+        height: 90vh;
+    }
 
     #bola {
 
@@ -437,10 +452,11 @@ p.claro {
         position: relative;
         margin-top: 100px;
         margin-left: 10vw;
+        margin-right: 10vw;
         float: right;
         border-radius: 50%;
         background-color: white;
-        display: display-flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         aspect-ratio: 1 / 1;
@@ -456,11 +472,12 @@ p.claro {
 
     }
 
-    a:link.botao{
+    a:link.botao {
         color: #DCEFC3;
         text-decoration: none;
     }
-    a:visited.botao{
+
+    a:visited.botao {
         color: #DCEFC3;
         text-decoration: none;
     }
@@ -468,7 +485,7 @@ p.claro {
     /* COMO QUE FAZ PRA CENTRALIZAR NESSE FUNDOOOOOOOOOO */
 
     p.claro {
-        
+
         color: #DCEFC3;
         background-color: #2F7740;
         border-radius: 5%;
@@ -476,6 +493,7 @@ p.claro {
         height: 45px;
         display: inline-block;
         text-align: center;
+        vertical-align: middle;
         padding: 5px;
         margin-top: 45px;
     }
@@ -492,17 +510,29 @@ p.claro {
         margin-top: 10px;
 
     }
+
     img.baixo {
         height: 20px;
         width: 20px;
         background-color: #ebedec;
     }
-       
-                                                                                /* CODIGOS RELACIONADOS À SEGUNDA TELA */
+
+    #grama {
+        
+        position: relative;
+        display: block;
+        width: 100vw;
+        clear: both;
+        height: 17vh;
+        background-color: rgb(151, 183, 142);
+
+    }
+
+    /* CODIGOS RELACIONADOS À SEGUNDA TELA */
 
 
     #ods {
-        width: 80vw;
+        width: 100vw;
         height: 70vh;
         margin-right: auto;
         margin-left: auto;
@@ -513,14 +543,15 @@ p.claro {
         text-align: right;
         color: #2F7740;
         position: relative;
-        width: 100%;
+        width: 70vw;
         height: 100%;
-        padding-left: 17vw;
+        padding-right: 15vw;
+        padding-left: 15vw;
         padding-top: 10vh;
         float: right;
 
     }
-    
+
     /* como centralizar isso */
     h2 {
 
@@ -528,7 +559,7 @@ p.claro {
         text-align: center;
     }
 
-                                                                                   /* CODIGOS RELACIONADOS À NEWSLETTER */
+    /* CODIGOS RELACIONADOS À NEWSLETTER */
 
 
     section.newsletter {
@@ -554,7 +585,7 @@ p.claro {
         width: 100%;
         padding-bottom: 15px;
     }
-    
+
 
     /* pq q essa praga nao ta floatando*/
 
@@ -567,6 +598,7 @@ p.claro {
         margin-left: 15vw;
 
     }
+
     div.forma {
         display: block;
         width: 35vw;
@@ -590,10 +622,9 @@ p.claro {
 
         width: 60%;
         margin-top: 10px
-
     }
 
-                                                                               /* CODIGOS RELACIONADOS À TERCEIRA TELA */
+    /* CODIGOS RELACIONADOS À TERCEIRA TELA */
 
     #mundial {
         width: 80vw;
@@ -621,7 +652,7 @@ p.claro {
         float: left;
     }
 
-                                                                                   /* CODIGOS RELACIONADOS AO FOOTER */
+    /* CODIGOS RELACIONADOS AO FOOTER */
 
     footer {
         color: #DCEFC3;
