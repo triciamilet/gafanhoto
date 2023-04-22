@@ -62,8 +62,19 @@ body {
         text-align: center;
     }
 
+    
+    p.subtitulo {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 30px;
+
+    }
+
     #grama {
-        
+
         position: relative;
         display: block;
         width: 100%;
@@ -73,7 +84,6 @@ body {
 
     }
 
-
     footer {
         color: #DCEFC3;
         background-color: #2F7740;
@@ -81,6 +91,10 @@ body {
         clear: both;
         width: 100%;
         height: 300px;
+    }
+
+    div.footer {
+
         text-align: left;
         padding-left: 12vw;
         padding-top: 20px;
@@ -102,11 +116,18 @@ body {
 
     }
 
+    p.footer {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
+
+    }
+
 
     nav {
         position: fixed;
         z-index: 8;
-        width: 100vw;
+        width: 100%;
         height: 80px;
         top: 0;
         left: 0;
@@ -166,7 +187,7 @@ p.claro {
 
 #brasil {
     width: 80vw;
-    height: 90vh;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -180,7 +201,25 @@ p.claro {
     height: 90vh;
     padding-left: 17vw;
     padding-top: 17vh;
-    float: right;
+
+}
+
+#regiao {
+    width: 80vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#regiaotexto {
+    text-align: right;
+    color: #2F7740;
+    position: relative;
+    width: 75vw;
+    height: 90vh;
+    padding-left: 17vw;
+    padding-top: 17vh;
 
 }
 
@@ -198,17 +237,17 @@ p.claro {
 
 /* 1024 em diante - desktops ou qualquer outras telas maiores */
 @media screen and (min-width:767px) {
-    
+
     #wrapper {
         width: 100%;
         height: 100vh;
         position: absolute;
     }
 
-                                                                                   /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
+    /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
     nav {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 80px;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     }
@@ -218,7 +257,7 @@ p.claro {
         float: left;
         display: block;
         width: 10vw;
-        height: 10vh; 
+        height: 10vh;
         padding-left: 10%;
     }
 
@@ -230,43 +269,43 @@ p.claro {
         position: absolute;
         left: 50px;
         top: 15px;
-        
+
     }
 
-        ul {
-            padding: 15%;
-            padding-top: 20px;
-            text-align: center;
-            list-style-type: none;
-            overflow: hidden;
-            margin-right: 10%;
-        }
-        
-          
-        li {
-            float: left;
-            display: block;
-          }
-          
-          li a {
-            display: block;
-            color: #2F7740 ;
-            text-align: center;
-            padding: 12px;
-            margin-left: 20px;
-            text-decoration: none;
-          }
+    ul {
+        padding: 15%;
+        padding-top: 20px;
+        text-align: center;
+        list-style-type: none;
+        overflow: hidden;
+        margin-right: 10%;
+    }
 
-          .menu{
-            display: flex;
-        }
 
-        ul li:last-child {
+    li {
+        float: left;
+        display: block;
+    }
 
-            position: absolute;
-            right: 10%;
+    li a {
+        display: block;
+        color: #2F7740;
+        text-align: center;
+        padding: 12px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
 
-        }
+    .menu {
+        display: flex;
+    }
+
+    ul li:last-child {
+
+        position: absolute;
+        right: 10%;
+
+    }
 
     #subir {
         position: fixed;
@@ -278,32 +317,35 @@ p.claro {
         border-radius: 100%;
         z-index: 10;
     }
-                                                                                  /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
-   
-        h1 {
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 30px;
-        }
 
-        p {
+    /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
 
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 22px;
+    h1 {
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 30px;
+    }
 
-        }
+    p {
 
-        p.subtitulo {
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 22px;
 
-            font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            line-height: 22px;
-            text-align: center;
+    }
 
-        }
+    p.subtitulo {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 30px;
+
+    }
 
     /* COMO QUE FAZ PRA CENTRALIZAR NESSE FUNDOOOOOOOOOO */
 
     p.claro {
-        
+
         color: #DCEFC3;
         background-color: #2F7740;
         border-radius: 5%;
@@ -315,41 +357,73 @@ p.claro {
         margin-top: 45px;
     }
 
-                                                                                /* CODIGOS RELACIONADOS À SEGUNDA TELA */
+    /* CODIGOS RELACIONADOS À SEGUNDA TELA */
 
     #brasil {
         width: 100%;
-        height: 100%;
+        height: auto;
         margin-right: auto;
         margin-left: auto;
         display: block;
     }
 
     #brasilintro {
-        text-align: right;
+        text-align: center;
         color: #2F7740;
         position: relative;
-        width: 75vw;
-        height: 90vh;
+        width: 73vw;
+        height: auto;
         padding-left: 12vw;
         padding-right: 13vw;
         padding-top: 10vh;
 
     }
-    
+
+    #regiao {
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    #regiaotexto {
+        text-align: center;
+        color: #2F7740;
+        position: relative;
+        width: 73vw;
+        padding-left: 12vw;
+        padding-right: 13vw;
+        padding-top: 10vh;
+        height: auto;
+        margin-bottom: 100px;
+
+    }
+
+
+
     /* como centralizar isso */
     h2 {
         color: #2F7740;
         font-size: 32px;
         text-align: center;
     }
-    
+
+    img.mapa {
+
+        width: 400px;
+        height: auto;
+        align-content: center;
+        aspect-ratio: auto;
+        padding-top: 50px;
+    }
+
     /* pq q essa praga nao ta floatando*/
 
-                                                                                   /* CODIGOS RELACIONADOS AO FOOTER */
+    /* CODIGOS RELACIONADOS AO FOOTER */
 
     #grama {
-        
+
         position: relative;
         display: block;
         width: 100%;
@@ -365,7 +439,11 @@ p.claro {
         position: relative;
         clear: both;
         width: 100%;
-        height: 20vh;
+        height: 22vh;
+    }
+
+    div.footer {
+
         text-align: left;
         padding-left: 17vw;
         padding-top: 20px;
@@ -383,6 +461,13 @@ p.claro {
 
         font-weight: bold;
         font-size: 12pt;
+
+    }
+
+    p.footer {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
 
     }
 

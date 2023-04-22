@@ -47,7 +47,7 @@ body {
 
     #ods {
         width: 100%;
-        height: 70vh;
+        height: auto;
         margin-right: auto;
         margin-left: auto;
         display: block;
@@ -63,6 +63,18 @@ body {
         padding-right: 13vw;
         padding-top: 10vh;
         float: right;
+        margin-bottom: 80px
+
+    }
+
+    p.subtitulo {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 30px;
 
     }
 
@@ -109,7 +121,7 @@ body {
     nav {
         position: fixed;
         z-index: 8;
-        width: 100vw;
+        width: 100%;
         height: 80px;
         top: 0;
         left: 0;
@@ -148,23 +160,41 @@ body {
         padding-top: 50vh;
         padding-left: 15vw;
         float: left;
+        margin-bottom: 95px;
+    }
+
+    p.apresentacao {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 22px;
+        text-align: center;
+
     }
 
     h1 {
         font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 30px;
+        text-align: center;
     }
 
     p {
 
         font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 22px;
+        text-align: center;
+
+    }
+
+    p.footer {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
 
     }
 
     section.inicio {
         width: 80vw;
-        height: 95vh;
+        height: auto;
     }
 
     div.baixo {
@@ -190,15 +220,19 @@ body {
     #bola {
 
         width: 200px;
-        height: 200px;
+        height: 230px;
         position: absolute;
         top: 14vh;
         left: 0;
         right: 0;
         margin: auto;
         border-radius: 50%;
-        background-color: white;
+        background-color: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         aspect-ratio: 1 / 1;
+
     }
 
 
@@ -243,8 +277,10 @@ section.newsletter {
 
     background-color: #2F7740;
     width: 100%;
-    height: 150px;
+    height: 250px;
     clear: both;
+    vertical-align: middle;
+
 
 }
 
@@ -259,8 +295,10 @@ h3 {
 p.newsletter {
     width: 30vw;
     color: #DCEFC3;
-    width: 100%;
+    font-size: 11pt;
+    padding-top: 10px;
     padding-bottom: 15px;
+    text-align: left;
 }
 
 
@@ -304,7 +342,7 @@ input#email {
 
 #mundial {
     width: 80vw;
-    height: 70vh;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -319,6 +357,7 @@ input#email {
     padding-left: 17vw;
     padding-top: 10vh;
     float: right;
+    margin-bottom: 80px
 
 }
 
@@ -346,7 +385,7 @@ input#email {
     /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
     nav {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 80px;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     }
@@ -421,11 +460,12 @@ input#email {
     #apresentacao {
         color: #2F7740;
         position: relative;
-        width: 25vw;
+        width: 35vw;
         height: 60vh;
         padding-left: 17vw;
         padding-top: 15vh;
         float: left;
+        margin-bottom: 120px;
     }
 
     h1 {
@@ -433,16 +473,25 @@ input#email {
         line-height: 30px;
     }
 
+    p.apresentacao {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 22px;
+        text-align: left;
+
+    }
+
     p {
 
         font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 22px;
+        text-align: center;
 
     }
 
     section.inicio {
         width: 100%;
-        height: 90vh;
+        height: auto;
     }
 
     #bola {
@@ -455,7 +504,7 @@ input#email {
         margin-right: 10vw;
         float: right;
         border-radius: 50%;
-        background-color: white;
+        background-color: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -489,7 +538,7 @@ input#email {
         color: #DCEFC3;
         background-color: #2F7740;
         border-radius: 5%;
-        width: 25vw;
+        width: 35vw;
         height: 45px;
         display: inline-block;
         text-align: center;
@@ -503,7 +552,7 @@ input#email {
         color: #DCEFC3;
         background-color: #DCEFC3;
         border-radius: 5%;
-        width: 25vw;
+        width: 35vw;
         height: 30px;
         display: inline-block;
         text-align: center;
@@ -521,7 +570,7 @@ input#email {
         
         position: relative;
         display: block;
-        width: 100vw;
+        width: 100%;
         clear: both;
         height: 17vh;
         background-color: rgb(151, 183, 142);
@@ -532,8 +581,8 @@ input#email {
 
 
     #ods {
-        width: 100vw;
-        height: 70vh;
+        width: 100%;
+        height: auto;
         margin-right: auto;
         margin-left: auto;
         display: block;
@@ -545,12 +594,25 @@ input#email {
         position: relative;
         width: 70vw;
         height: 100%;
+        font-size: 1em;
         padding-right: 15vw;
         padding-left: 15vw;
         padding-top: 10vh;
         float: right;
+        margin-bottom: 80px
 
     }
+
+    p.subtitulo {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 30px;
+
+    }
+
 
     /* como centralizar isso */
     h2 {
@@ -566,8 +628,9 @@ input#email {
 
         background-color: #2F7740;
         width: 100%;
-        height: 150px;
+        height: 200px;
         clear: both;
+        vertical-align: middle;
 
     }
 
@@ -582,7 +645,8 @@ input#email {
     p.newsletter {
         width: 30vw;
         color: #DCEFC3;
-        width: 100%;
+        font-size: 11pt;
+        padding-top: 10px;
         padding-bottom: 15px;
     }
 
@@ -628,7 +692,7 @@ input#email {
 
     #mundial {
         width: 80vw;
-        height: 70vh;
+        height: auto;
         margin-right: auto;
         margin-left: auto;
         display: block;
@@ -643,6 +707,7 @@ input#email {
         padding-left: 17vw;
         padding-top: 10vh;
         float: right;
+        margin-bottom: 80px
 
     }
 
@@ -685,4 +750,10 @@ input#email {
 
     }
 
+    p.footer {
+
+        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
+
+    }
 }
