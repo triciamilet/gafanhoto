@@ -42,50 +42,50 @@ body {
 
     #menu__toggle {
         opacity: 0;
-      }
-      #menu__toggle:checked + .menu__btn > span {
-        transform: rotate(45deg);
-      }
-      #menu__toggle:checked + .menu__btn > span::before {
+    }
+    #menu__toggle:checked + .menu__btn > span {
+         transform: rotate(45deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
         top: 0;
         transform: rotate(0deg);
-      }
-      #menu__toggle:checked + .menu__btn > span::after {
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
         top: 0;
         transform: rotate(90deg);
-      }
-      #menu__toggle:checked ~ .menu__box {
+    }
+    #menu__toggle:checked ~ .menu__box {
         left: 0 !important;
-      }    
-      .menu__btn {
+    }    
+    .menu__btn {
         position: fixed;
-        top: 35px;
+        top: 15px;
         left: 35px;
         width: 26px;
         height: 26px;
         cursor: pointer;
         z-index: 15;
-      }
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
         display: block;
         position: absolute;
         width: 100%;
         height: 3px;
         transition-duration: .25s; 
         background-color: #2B8E2D;
-      }
-      .menu__btn > span::before {
+    }
+    .menu__btn > span::before {
         content: '';
         top: -8px;
         }
 
-      .menu__btn > span::after {
+    .menu__btn > span::after {
         content: '';
         top: 8px;
-      }
-      .menu__box {
+    }
+    .menu__box {
         display: block;
         position: fixed;
         top: 0;
@@ -100,8 +100,8 @@ body {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
         transition-duration: .25s;
         z-index: 14;
-      }
-      .menu__item {
+    }
+    .menu__item {
         display: block;
         padding: 12px 36px;
         color: #2B8E2D;
@@ -110,10 +110,11 @@ body {
         text-decoration: none;
         transition-duration: .25s;
 
-      }
-      .menu__item:hover {
+    }
+    .menu__item:hover {
         color: #1c781d;
-      }
+    }
+
 
 
     .menu {
@@ -379,7 +380,7 @@ p.claro {
     background-color: #2B8E2D;
     border-radius: 5%;
     width: 70vw;
-    height: 25px;
+    height: autox;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
@@ -394,71 +395,87 @@ section.newsletter {
 
     background-color: #2B8E2D;
     width: 100%;
-    height: 250px;
+    height: auto;
     clear: both;
-    vertical-align: middle;
+    text-align: center;
+    display: block;
+    
 
 
 }
 
 h3 {
-    width: 30vw;
+    width: 90%;
+    margin: auto;
     color: #E6FFBB;
-    text-align: left;
     padding-top: 25px;
+    text-align: center;
 
 }
 
 p.newsletter {
-    width: 30vw;
+    width: 90%;
+    padding-top: 10px;
+    margin: auto;
     color: #E6FFBB;
     font-size: 11pt;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    text-align: left;
+    text-align: center;
+
 }
 
-
-/* pq q essa praga nao ta floatando*/
 
 div.convite {
 
     display: block;
-    height: 100px;
+    height: auto;
     float: left;
-    width: 25vw;
-    margin-left: 15vw;
+    width: 100%;
+    text-align: center;
+    background-color: #2B8E2D;
+    margin-right: 15px;
+    
 
 }
 
 div.forma {
     display: block;
-    width: 35vw;
-    height: 100px;
-    margin-right: 15vw;
-    text-align: right;
+    width: 100%;
+    height: auto;
+    text-align: center;
     float: right;
+    position: relative;
     color: #E6FFBB;
-    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #2B8E2D;
 
 }
 
 label {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 16px;
+    display: block;
     padding-bottom: 5px;
+    text-align: center;
+    padding-top: 20px;
 
 }
 
 input#email {
 
-    width: 60%;
-    margin-top: 10px
+    width: 50%;
+    text-align: center;
 }
 
+input.submit {
+    padding: 2px;
+    background-color: #f4ff9e;
+    border: none;
+    color: #1c781d;
+    margin-top: 5px;
+}
 
 #mundial {
-    width: 80vw;
+    width: 100%;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -466,15 +483,17 @@ input#email {
 }
 
 #mundtexto {
-    text-align: right;
+    text-align: center;
     color: #2B8E2D;
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding-left: 17vw;
+    width: 64vw;
+    height: auto;
+    font-size: 12pt;
+    padding-right: 18vw;
+    padding-left: 18vw;
     padding-top: 10vh;
     float: right;
-    margin-bottom: 80px
+    margin-bottom: 40px
 
 }
 
@@ -500,10 +519,13 @@ input#email {
 
     /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
     nav {
-        position: relative;
+        position: fixed;
+        z-index: 8;
         width: 100%;
         height: 80px;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        background-color: #E6FFBB;
+        
     }
 
     a:link.foot {
@@ -525,7 +547,7 @@ input#email {
     #brand {
 
         float: left;
-        display: block;
+        display: fixed;
         width: 10vw;
         height: 10vh;
         padding-left: 10%;
@@ -536,12 +558,12 @@ input#email {
         z-index: 10;
         border-radius: 4px;
         width: 50px;
-        position: absolute;
+        position: fixed;
         left: 50px;
         top: 20px;
 
     }
-
+    
     ul {
         padding: 15%;
         padding-top: 20px;
@@ -597,11 +619,11 @@ input#email {
         color: #2B8E2D;
         position: relative;
         width: 35vw;
-        height: 60vh;
+        height: auto;
         padding-left: 17vw;
-        padding-top: 15vh;
+        padding-top: 22vh;
         float: left;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
 
     h1 {
@@ -628,6 +650,8 @@ input#email {
     section.inicio {
         width: 100%;
         height: auto;
+        display: flex;
+        align-content: center;
     }
 
     #bola {
@@ -635,7 +659,7 @@ input#email {
         width: 25vw;
         height: auto;
         position: relative;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: 10vw;
         margin-right: 10vw;
         float: right;
@@ -738,14 +762,14 @@ input#email {
         text-align: center;
         color: #2B8E2D;
         position: relative;
-        width: 70vw;
-        height: 100%;
-        font-size: 1em;
-        padding-right: 15vw;
-        padding-left: 15vw;
+        width: 64vw;
+        height: auto;
+        font-size: 12pt;
+        padding-right: 18vw;
+        padding-left: 18vw;
         padding-top: 10vh;
         float: right;
-        margin-bottom: 80px
+        margin-bottom: 40px
 
     }
 
@@ -799,69 +823,114 @@ input#email {
 
     /* pq q essa praga nao ta floatando*/
 
-    div.convite {
+    section.newsletter {
 
-        display: block;
-        height: 100px;
-        float: left;
-        width: 25vw;
-        margin-left: 15vw;
-
+        background-color: #2B8E2D;
+        width: 100%;
+        height: auto;
+        clear: both;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    
+    
     }
-
+    
+    h3 {
+        width: 100%;
+        color: #E6FFBB;
+        padding-top: 25px;
+        text-align: left;
+    
+    }
+    
+    p.newsletter {
+        width: 100%;
+        color: #E6FFBB;
+        font-size: 11pt;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+    
+    
+    div.convite {
+    
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        text-align: right;
+        padding-left: 10vw;
+        padding-right: 5vw;
+        background-color: #2B8E2D;
+    
+    }
+    
     div.forma {
         display: block;
-        width: 35vw;
-        height: 100px;
-        margin-right: 15vw;
+        width: 40%;
+        height: 100%;
         text-align: right;
         float: right;
+        position: relative;
         color: #E6FFBB;
-        padding-top: 40px;
-
+        background-color: #2B8E2D;
+        padding-top: auto;
+        padding-bottom: auto;
+        margin-right: 11vw;
+    
     }
-
+    
     label {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 16px;
+        display: block;
         padding-bottom: 5px;
-
+        text-align: right;
+        padding-top: 20px;
+    
     }
-
+    
     input#email {
-
-        width: 60%;
-        margin-top: 10px
+    
+        width: 50%;
+        text-align: right;
+    }
+    
+    input.submit {
+        padding: 2px;
+        background-color: #f4ff9e;
+        border: none;
+        color: #1c781d;
+        margin-top: 5px;
     }
 
     /* CODIGOS RELACIONADOS À TERCEIRA TELA */
 
-    #mundial {
-        width: 80vw;
+    #ods {
+        width: 100%;
         height: auto;
         margin-right: auto;
         margin-left: auto;
         display: block;
     }
 
-    #mundtexto {
-        text-align: right;
+    #odsintro {
+        text-align: center;
         color: #2B8E2D;
         position: relative;
-        width: 100%;
-        height: 100%;
-        padding-left: 17vw;
+        width: 64vw;
+        height: auto;
+        font-size: 12pt;
+        padding-right: 18vw;
+        padding-left: 18vw;
         padding-top: 10vh;
         float: right;
-        margin-bottom: 80px
+        margin-bottom: 40px
 
     }
 
-    aside {
-        width: 20vw;
-        height: 70vh;
-        float: left;
-    }
 
     /* CODIGOS RELACIONADOS AO FOOTER */
 

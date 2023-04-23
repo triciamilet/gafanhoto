@@ -39,11 +39,11 @@ html {
         height: 65vh;
     }
 
-        #menu__toggle {
+       #menu__toggle {
             opacity: 0;
         }
         #menu__toggle:checked + .menu__btn > span {
-            transform: rotate(45deg);
+             transform: rotate(45deg);
         }
         #menu__toggle:checked + .menu__btn > span::before {
             top: 0;
@@ -162,6 +162,7 @@ html {
         width: 100%;
         clear: both;
         height: 20vh;
+        bottom: -2px;
         background-image: url(../imagens/grama_2.svg);
         background-repeat: repeat-x;
 
@@ -394,11 +395,11 @@ p.claro {
 
 img.mapa {
 
-    width: 400px;
+    width: 60vw;
     height: auto;
     align-content: center;
     aspect-ratio: auto;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 #regiao {
@@ -453,16 +454,18 @@ p {
 
     /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
     nav {
-        position: relative;
+        position: fixed;
         width: 100%;
         height: 80px;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        background-color: #E6FFBB;
+        z-index: 7;
     }
 
     #brand {
 
         float: left;
-        display: block;
+        display: fixed;
         width: 10vw;
         height: 10vh;
         padding-left: 10%;
@@ -473,7 +476,7 @@ p {
         z-index: 10;
         border-radius: 4px;
         width: 50px;
-        position: absolute;
+        position: fixed;
         left: 50px;
         top: 20px;
 
@@ -587,7 +590,7 @@ p {
         height: auto;
         padding-left: 12vw;
         padding-right: 13vw;
-        padding-top: 10vh;
+        padding-top: 16vh;
 
     }
 
