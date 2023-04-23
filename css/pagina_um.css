@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #DCEFC3;
+    background-color: #E6FFBB;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -41,7 +41,8 @@ body {
         width: 100%;
         clear: both;
         height: 20vh;
-        background-color: rgb(151, 183, 142);
+        background-image: url(../imagens/grama_m.svg);
+        background-repeat: repeat-x;
 
     }
 
@@ -54,8 +55,8 @@ body {
     }
 
     #odsintro {
-        text-align: right;
-        color: #2F7740;
+        text-align: center;
+        color: #2B8E2D;
         position: relative;
         width: 75vw;
         height: 100%;
@@ -86,8 +87,8 @@ body {
     }
 
     footer {
-        color: #DCEFC3;
-        background-color: #2F7740;
+        color: #E6FFBB;
+        background-color: #2B8E2D;
         position: relative;
         clear: both;
         width: 100%;
@@ -125,8 +126,25 @@ body {
         height: 80px;
         top: 0;
         left: 0;
-        background-color: #DCEFC3;
+        background-color: #E6FFBB;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    a:link.foot {
+        color: #E6FFBB;
+        text-decoration: none;
+    }
+
+    a:visited.foot {
+        color: #E6FFBB;
+        text-decoration: none;
+    }
+
+    a:hover.foot {
+
+        color: #E6FFBB;
+        text-decoration: wavy;
+
     }
 
     #brand {
@@ -153,7 +171,7 @@ body {
 
     /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
     #apresentacao {
-        color: #2F7740;
+        color: #2B8E2D;
         position: relative;
         width: 70vw;
         height: 50vh;
@@ -199,8 +217,8 @@ body {
 
     div.baixo {
 
-        color: #DCEFC3;
-        background-color: #DCEFC3;
+        color: #E6FFBB;
+        background-color: #E6FFBB;
         border-radius: 5%;
         width: 70vw;
         height: 30px;
@@ -238,28 +256,38 @@ body {
 
     #gafanhoto_um {
 
-        width: 130px;
+        width: 200px;
         height: auto;
         position: relative;
         aspect-ratio: auto;
 
     }
+
+    #gafanhoto_dois {
+
+        width: 150px;
+        height: auto;
+        position: relative;
+        aspect-ratio: auto;
+        margin-top: 35px;
+
+    }
 }
 
 a:link.botao {
-    color: #DCEFC3;
+    color: #E6FFBB;
     text-decoration: none;
 }
 
 a:visited.botao {
-    color: #DCEFC3;
+    color: #E6FFBB;
     text-decoration: none;
 }
 
 p.claro {
 
-    color: #DCEFC3;
-    background-color: #2F7740;
+    color: #E6FFBB;
+    background-color: #2B8E2D;
     border-radius: 5%;
     width: 70vw;
     height: 25px;
@@ -275,7 +303,7 @@ p.claro {
 
 section.newsletter {
 
-    background-color: #2F7740;
+    background-color: #2B8E2D;
     width: 100%;
     height: 250px;
     clear: both;
@@ -286,7 +314,7 @@ section.newsletter {
 
 h3 {
     width: 30vw;
-    color: #DCEFC3;
+    color: #E6FFBB;
     text-align: left;
     padding-top: 25px;
 
@@ -294,7 +322,7 @@ h3 {
 
 p.newsletter {
     width: 30vw;
-    color: #DCEFC3;
+    color: #E6FFBB;
     font-size: 11pt;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -321,7 +349,7 @@ div.forma {
     margin-right: 15vw;
     text-align: right;
     float: right;
-    color: #DCEFC3;
+    color: #E6FFBB;
     padding-top: 40px;
 
 }
@@ -350,7 +378,7 @@ input#email {
 
 #mundtexto {
     text-align: right;
-    color: #2F7740;
+    color: #2B8E2D;
     position: relative;
     width: 100%;
     height: 100%;
@@ -367,7 +395,6 @@ input#email {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #2F7740;
     border-radius: 100%;
     z-index: 10;
 }
@@ -390,6 +417,22 @@ input#email {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     }
 
+    a:link.foot {
+        color: #E6FFBB;
+        text-decoration: none;
+    }
+
+    a:visited.foot {
+        color: #E6FFBB;
+        text-decoration: none;
+    }
+
+    a:hover.foot {
+
+        color: rgb(203, 255, 112);
+
+    }
+
     #brand {
 
         float: left;
@@ -406,7 +449,7 @@ input#email {
         width: 50px;
         position: absolute;
         left: 50px;
-        top: 15px;
+        top: 20px;
 
     }
 
@@ -427,7 +470,7 @@ input#email {
 
     li a {
         display: block;
-        color: #2F7740;
+        color: #2B8E2D;
         text-align: center;
         padding: 12px;
         margin-left: 20px;
@@ -451,14 +494,14 @@ input#email {
         right: 50px;
         width: 50px;
         height: 50px;
-        background-color: #2F7740;
+        background-color: #2B8E2D;
         border-radius: 100%;
         z-index: 10;
     }
 
     /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
     #apresentacao {
-        color: #2F7740;
+        color: #2B8E2D;
         position: relative;
         width: 35vw;
         height: 60vh;
@@ -514,20 +557,31 @@ input#email {
 
     #gafanhoto_um {
 
-        width: 15vw;
+        width: 30vw;
         height: auto;
         position: relative;
         aspect-ratio: auto;
 
     }
 
+
+    #gafanhoto_dois {
+
+        width: 10vw;
+        height: auto;
+        position: relative;
+        aspect-ratio: auto;
+        margin-top: 35px;
+
+    }
+
     a:link.botao {
-        color: #DCEFC3;
+        color: #E6FFBB;
         text-decoration: none;
     }
 
     a:visited.botao {
-        color: #DCEFC3;
+        color: #E6FFBB;
         text-decoration: none;
     }
 
@@ -535,8 +589,8 @@ input#email {
 
     p.claro {
 
-        color: #DCEFC3;
-        background-color: #2F7740;
+        color: #E6FFBB;
+        background-color: #2B8E2D;
         border-radius: 5%;
         width: 35vw;
         height: 45px;
@@ -549,8 +603,8 @@ input#email {
 
     div.baixo {
 
-        color: #DCEFC3;
-        background-color: #DCEFC3;
+        color: #E6FFBB;
+        background-color: #E6FFBB;
         border-radius: 5%;
         width: 35vw;
         height: 30px;
@@ -573,7 +627,9 @@ input#email {
         width: 100%;
         clear: both;
         height: 17vh;
-        background-color: rgb(151, 183, 142);
+        background-image: url(../imagens/grama_m.svg);
+        background-repeat: repeat-x;
+
 
     }
 
@@ -589,8 +645,8 @@ input#email {
     }
 
     #odsintro {
-        text-align: right;
-        color: #2F7740;
+        text-align: center;
+        color: #2B8E2D;
         position: relative;
         width: 70vw;
         height: 100%;
@@ -626,7 +682,7 @@ input#email {
 
     section.newsletter {
 
-        background-color: #2F7740;
+        background-color: #2B8E2D;
         width: 100%;
         height: 200px;
         clear: both;
@@ -636,7 +692,7 @@ input#email {
 
     h3 {
         width: 30vw;
-        color: #DCEFC3;
+        color: #E6FFBB;
         text-align: left;
         padding-top: 25px;
 
@@ -644,7 +700,7 @@ input#email {
 
     p.newsletter {
         width: 30vw;
-        color: #DCEFC3;
+        color: #E6FFBB;
         font-size: 11pt;
         padding-top: 10px;
         padding-bottom: 15px;
@@ -670,7 +726,7 @@ input#email {
         margin-right: 15vw;
         text-align: right;
         float: right;
-        color: #DCEFC3;
+        color: #E6FFBB;
         padding-top: 40px;
 
     }
@@ -700,7 +756,7 @@ input#email {
 
     #mundtexto {
         text-align: right;
-        color: #2F7740;
+        color: #2B8E2D;
         position: relative;
         width: 100%;
         height: 100%;
@@ -720,8 +776,8 @@ input#email {
     /* CODIGOS RELACIONADOS AO FOOTER */
 
     footer {
-        color: #DCEFC3;
-        background-color: #2F7740;
+        color: #E6FFBB;
+        background-color: #2B8E2D;
         position: relative;
         clear: both;
         width: 100%;
