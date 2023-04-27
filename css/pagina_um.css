@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: #E6FFBB;
-    font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -105,7 +105,7 @@ body {
         display: block;
         padding: 12px 36px;
         color: #2B8E2D;
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 16px;
         text-decoration: none;
         transition-duration: .25s;
@@ -152,9 +152,9 @@ body {
         text-align: center;
         color: #2B8E2D;
         position: relative;
-        width: 75vw;
+        width: 74vw;
         height: 100%;
-        padding-left: 12vw;
+        padding-left: 13vw;
         padding-right: 13vw;
         padding-top: 10vh;
         float: right;
@@ -164,7 +164,7 @@ body {
 
     p.subtitulo {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
         font-weight: bold;
         text-align: center;
@@ -267,8 +267,8 @@ body {
         color: #2B8E2D;
         position: relative;
         width: 70vw;
-        height: 50vh;
-        padding-top: 50vh;
+        height: auto;
+        padding-top: 400px;
         padding-left: 15vw;
         float: left;
         margin-bottom: 95px;
@@ -276,21 +276,21 @@ body {
 
     p.apresentacao {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 22px;
         text-align: center;
 
     }
 
     h1 {
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 30px;
         text-align: center;
     }
 
     p {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 22px;
         text-align: center;
 
@@ -298,7 +298,7 @@ body {
 
     p.footer {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: left;
 
     }
@@ -378,7 +378,7 @@ p.claro {
 
     color: #E6FFBB;
     background-color: #2B8E2D;
-    border-radius: 5%;
+    border-radius: 30px;
     width: 70vw;
     height: autox;
     vertical-align: middle;
@@ -491,7 +491,7 @@ input.submit {
     font-size: 12pt;
     padding-right: 18vw;
     padding-left: 18vw;
-    padding-top: 10vh;
+    padding-top: 80px;
     float: right;
     margin-bottom: 60px
 
@@ -627,13 +627,13 @@ input.submit {
     }
 
     h1 {
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 30px;
     }
 
     p.apresentacao {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 22px;
         text-align: left;
 
@@ -641,7 +641,7 @@ input.submit {
 
     p {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 22px;
         text-align: center;
 
@@ -678,6 +678,7 @@ input.submit {
         height: auto;
         position: relative;
         aspect-ratio: auto;
+        padding-top: 50px;
 
     }
 
@@ -708,9 +709,9 @@ input.submit {
 
         color: #E6FFBB;
         background-color: #2B8E2D;
-        border-radius: 5%;
+        border-radius: 30px;
         width: 35vw;
-        height: 45px;
+        height: auto;
         display: inline-block;
         text-align: center;
         vertical-align: middle;
@@ -775,7 +776,7 @@ input.submit {
 
     p.subtitulo {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 18px;
         text-align: center;
         padding-top: 12px;
@@ -859,7 +860,7 @@ input.submit {
         display: block;
         height: auto;
         float: left;
-        width: 100%;
+        width: 90%;
         text-align: right;
         padding-left: 10vw;
         padding-right: 5vw;
@@ -869,7 +870,7 @@ input.submit {
     
     div.forma {
         display: block;
-        width: 40%;
+        width: 50%;
         height: 100%;
         text-align: right;
         float: right;
@@ -894,7 +895,7 @@ input.submit {
     
     input#email {
     
-        width: 50%;
+        width: 100%;
         text-align: right;
     }
     
@@ -940,7 +941,7 @@ input.submit {
         position: relative;
         clear: both;
         width: 100%;
-        height: 22vh;
+        height: 180px;
     }
 
     div.footer {
@@ -967,7 +968,7 @@ input.submit {
 
     p.footer {
 
-        font-family: 'Ruda', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: left;
 
     }
