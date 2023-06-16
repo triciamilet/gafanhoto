@@ -1,111 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kauê Pimentel, Khira Regina, Patrícia Milet">
-    <meta name="description" content="Site informativo da ADO 4 da ONU">
-    <meta robots="index, follow">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/game.css">
-    <link rel="icon" type="image/x-icon" href="../imagens/icone.svg">
-    <title>Toca do Gafanhoto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <title>Jogo da Memória</title>
 </head>
-
 <body>
-    <div id="subir"> <a href=#brand><img src="../imagens/subir.svg"></a></div>
+
+  <div id="navegation">
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+    <div id="subir"> <a href=#brand><img src="../imgs/subir.svg"></a></div>
 
     <div id="brand">
-        <a href="../html/pagina_um.html"><img id="logo" src="../imagens/icone.svg"></a>
+    <a href="../html/pagina_um.html"><img id="logo" src="../imgs/icone.svg"></a>
+
+    <div class="menu">
+
+      <nav>
+          <ul>
+              <li><a class="nav" href="../html/pagina_um.html">Início</a></li>
+              <li><a class="nav" href="../html/pagina_dois.html">A Educação no Brasil</a></li>
+              <li><a class="nav" href="../html/jogo.html">JOGAR</a></li>
+              <li><a class="nav" href="#contato">Contato</a></li>
+          </ul>
+      </nav>
+
+  </div>
+  </div>
+
+
+  <div class="game">
+    <div class="stats-container">
+      <div id="moves-count"></div>
+      <div id="time"></div>
     </div>
+    <div class="game-container"></div>
+    <button id="stop" class="hide">Parar de jogar</button>
+  </div>
+  <div class="controls-container">
+    <p id="result"></p>
+    <div id="instrucao">
+    <h2>Jogo da Memória da ODS</h2>
+    <p class="subtitulo"> Selecione de duas em duas cartas e forme pares idênticos até acabar as cartas.</p>
+    </div>
+    <button id="start">Começar</button>
+  </div>
+  
 
-    <div id="wrapper">
 
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-        
-            <ul class="menu__box">
-                <li><a class="menu__item" href="../html/pagina_um.html">Início</a></li>
-                <li><a class="menu__item" href="../html/pagina_dois.html">A Educação no Brasil</a></li>
-                <li><a class="menu__item" href="../html/jogo.html">JOGAR</a></li>
-                <li><a class="menu__item" href="#contato">Contato</a></li>
-              </ul>
+  <footer>
+    <div id="grama"></div>
+      <div class="footer">
+      
+          <div class="ftab">
+              <h6>ODS</h6>
+              <p class="footer"><a class="foot" href="#odsintro">Sobre a ODS</a></p>
+              <p class="footer"><a class="foot" href="../html/pagina_dois.html">Sobre o Brasil</a></p>
+              <p class="footer"><a class="foot" href="#mundial">Sobre o Mundo</a></p>
+          </div>
+          <div class="ftab">
+              <h6>OUTROS</h6> 
+              <p class="footer">Sobre nós</p>
+              <p class="footer">Sobre o projeto</p>
+              <p class="footer">Blog</p>
+          </div>
+          <div class="ftab">
+              <h6>SUPORTE</h6>
+              <p class="footer">FAQ</p>
+              <p class="footer">Reportar problema</p>
+          </div>
+          <div class="ftab">
+              <h6>CONTATO</h6>
+              <p class="footer"><a class="foot" href="https://instagram.com/khira_your_queen">@khira_your_queen</a></p>
+              <p class="footer"><a class="foot" href="https://instagram.com/triciamilet">@triciamilet</a></p>
+              <p class="footer"><a class="foot" href="https://instagram.com/kahpslock_">@kahpslock_ </a></p>
           </div>
 
-        <div class="menu">
+      </div>
+  </footer>
 
-            <nav>
-                <ul>
-                    <li><a class="nav" href="../html/pagina_um.html">Início</a></li>
-                    <li><a class="nav" href="../html/pagina_dois.html">A Educação no Brasil</a></li>
-                    <li><a class="nav" href="../html/jogo.html">JOGAR</a></li>
-                    <li><a class="nav" href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
-        <section id="jogo">
-
-            <div id="memoria">
-                <h2>Jogo da Memória da ODS</h2>
-                <br>
-                <p class="subtitulo"> Selecione de duas em duas cartas e forme pares idênticos até acabar as cartas.</p>
-            </div>
-
-            <div class="game">
-                <div class="stats-container">
-                  <div id="moves-count"></div>
-                  <div id="time"></div>
-                </div>
-                <div class="game-container"></div>
-                <button id="stop" class="hide">Parar de jogar</button>
-              </div>
-              <div class="controls-container">
-                <p id="result"></p>
-                <button id="start">Começar</button>
-              </div>
-
-        </section>
-
-
-
-        <div id="grama"></div>
-        <footer>
-
-            <div class="footer">
-            
-                <div class="ftab">
-                    <h6>Produto</h6>
-                    <p class="footer">Home</p>
-                    <p class="footer">Home</p>
-                    <p class="footer">Home</p>
-                    <p class="footer">Home</p>
-                </div>
-                <div class="ftab">
-                    <h6>ODS</h6>
-                    <p class="footer"><a class="foot" href="../html/pagina_um.html">Sobre a ODS</a></p>
-                    <p class="footer"><a class="foot" href="../html/pagina_dois.html">Sobre o Brasil</a></p>
-                    <p class="footer"><a class="foot" href="../html/pagina_um.html">Sobre o Mundo</a></p>
-                </div>
-                <div class="ftab">
-                    <h6>OUTROS</h6> 
-                    <p class="footer">Sobre nós</p>
-                    <p class="footer">Sobre o projeto</p>
-                    <p class="footer">Blog</p>
-                </div>
-                <div class="ftab">
-                    <h6>NOS APOIE</h6>
-                    <p class="footer">@Khira_your_queen</p>
-                    <p class="footer">@triciamilet</p>
-                    <p class="footer">@kahpslock_</p>
-                </div>
-
-            </div>
-        </footer>
-        <script src="../js/script.js"></script>
-        </body>
+    <script src="../js/script.js"></script>
+</body>
+</html>
