@@ -6,12 +6,13 @@
 }
 
 body {
-    background-color: #23cc88;
+    background-color: #E6FFBB;
 }
 
-.wrapper {
+.game {
     box-sizing: content-box;
-    width: 26.87em;
+    width: 300px;
+    height: 430px;
     padding: 2.5em 3em;
     background-color: #ffffff;
     position: absolute;
@@ -19,13 +20,14 @@ body {
     left: 50%;
     top: 50%;
     border-radius: 0.6em;
-    box-shadow: 0 0.9em 2.8em brown;
+    box-shadow: 0 0.9em 2.8em #2B8E2D;
 }
 
 .game-container{
     position: relative;
     width: 100%;
     display: grid;
+    place-items: center;
     gap: 0.6em;
 }
 
@@ -40,8 +42,8 @@ body {
 
 .card-container {
     position: relative;
-    width: 6.25em;
-    height: 6.25em;
+    width: 4em;
+    height: 4em;
     cursor: pointer;
 }
 
@@ -59,7 +61,7 @@ body {
 }
 
 .card-before {
-    background-color: #ccc523;
+    background-color: #2B8E2D;
     font-size: 2.8em;
     font-weight: 600;
 }
@@ -80,8 +82,6 @@ body {
 .controls-container {
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -89,24 +89,38 @@ body {
     top: 0;
 }
 
+#start {
+    display: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 button {
     border: none;
     border-radius: 0.3em;
     padding: 1em 1.5em;
     cursor: pointer;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 #stop {
     font-size: 1.1em;
     display: block;
     margin: 1.1em auto 0 auto;
-    background-color: #000000;
+    background-color: #2B8E2D;
     color: #ffffff;
 }
 
 .controls-container button {
     font-size: 1.3em;
-    box-shadow: 0 0.6em 2em #393939;
+    background-color: #2B8E2D;
+    color: #ffffff;
+
 }
 
 .hide {
@@ -132,446 +146,34 @@ button {
     height: 100%;
 }
 
-
-/* site
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+#navigation {
+    z-index: 100;
 }
 
-body {
-    background-color: #E6FFBB;
-    font-family: Arial, Helvetica, sans-serif;
+#brand {
+
+    float: left;
+    display: fixed;
+    width: 10vw;
+    height: 10vh;
+    padding-left: 10%;
 }
 
-html {
-
-    scroll-behavior: smooth
-    
-}
-
-/* até 1024 - celular e tablets*/
-@media screen and (max-width: 767px) {
-
-    #wrapper {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    nav {
-        width: auto;
-        height: 200px;
-    }
-
-    section {
-        width: auto;
-        height: 65vh;
-    }
-
-       #menu__toggle {
-            opacity: 0;
-        }
-        #menu__toggle:checked + .menu__btn > span {
-             transform: rotate(45deg);
-        }
-        #menu__toggle:checked + .menu__btn > span::before {
-            top: 0;
-            transform: rotate(0deg);
-        }
-        #menu__toggle:checked + .menu__btn > span::after {
-            top: 0;
-            transform: rotate(90deg);
-        }
-        #menu__toggle:checked ~ .menu__box {
-            left: 0 !important;
-        }    
-        .menu__btn {
-            position: fixed;
-            top: 35px;
-            left: 35px;
-            width: 26px;
-            height: 26px;
-            cursor: pointer;
-            z-index: 15;
-        }
-        .menu__btn > span,
-        .menu__btn > span::before,
-        .menu__btn > span::after {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            transition-duration: .25s; 
-            background-color: #2B8E2D;
-        }
-        .menu__btn > span::before {
-            content: '';
-            top: -8px;
-            }
-
-        .menu__btn > span::after {
-            content: '';
-            top: 8px;
-        }
-        .menu__box {
-            display: block;
-            position: fixed;
-            top: 0;
-            left: -100%;
-            width: 300px;
-            height: 100%;
-            margin: 0;
-            padding: 80px 0;
-            list-style: none;
-            background-color: #f4ff9e;
-            border-right: solid #2B8E2D 2px;
-            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-            transition-duration: .25s;
-            z-index: 14;
-        }
-        .menu__item {
-            display: block;
-            padding: 12px 36px;
-            color: #2B8E2D;
-            font-family: "Poppins", sans-serif;
-                font-size: 16px;
-            text-decoration: none;
-            transition-duration: .25s;
-
-        }
-        .menu__item:hover {
-            color: #1c781d;
-        }
-
-    /* CODIGOS RELACIONADOS À SEGUNDA TELA */
-
-
-    #ods {
-        width: 80vw;
-        height: 70vh;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
-
-    #odsintro {
-        text-align: right;
-        color: #2B8E2D;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding-left: 17vw;
-        padding-top: 10vh;
-        float: right;
-
-    }
-
-    /* como centralizar isso */
-    h2 {
-
-        font-size: 32px;
-        text-align: center;
-    }
-
-    
-    p.subtitulo {
-
-        font-family: "Poppins", sans-serif;
-        font-size: 14px;
-        text-align: center;
-        padding-top: 12px;
-        padding-bottom: 30px;
-
-    }
-
-    #grama {
-
-        position: relative;
-        display: block;
-        width: 100%;
-        clear: both;
-        height: 20vh;
-        bottom: -2px;
-        background-image: url(../imagens/grama_2.svg);
-        background-repeat: repeat-x;
-
-    }
-
-    footer {
-        color: #E6FFBB;
-        background-color: #2B8E2D;
-        position: relative;
-        clear: both;
-        width: 100%;
-        height: 300px;
-    }
-
-    div.footer {
-
-        text-align: left;
-        padding-left: 12vw;
-        padding-top: 20px;
-    }
-
-    div.ftab {
-
-        width: 40vw;
-        height: 130px;
-        float: left;
-        display: block;
-
-    }
-
-    h6 {
-
-        font-weight: bold;
-        font-size: 12pt;
-
-    }
-
-    p.footer {
-
-        font-family: "Poppins", sans-serif;
-        text-align: left;
-
-    }
-
-    a:link.foot {
-        color: #E6FFBB;
-        text-decoration: none;
-    }
-
-    a:visited.foot {
-        color: #E6FFBB;
-        text-decoration: none;
-    }
-
-    a:hover.foot {
-
-        color: rgb(203, 255, 112);
-
-    }
-
-
-
-    nav {
-        position: fixed;
-        z-index: 8;
-        width: 100%;
-        height: 80px;
-        top: 0;
-        left: 0;
-        background-color: #E6FFBB;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    
-    a.nav {
-
-        display: none;
-    }
-
-    #menu__toggle {
-        opacity: 0;
-      }
-      #menu__toggle:checked + .menu__btn > span {
-        transform: rotate(45deg);
-      }
-      #menu__toggle:checked + .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0deg);
-      }
-      #menu__toggle:checked + .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-      }
-      #menu__toggle:checked ~ .menu__box {
-        left: 0 !important;
-      }    
-      .menu__btn {
-        position: fixed;
-        top: 35px;
-        left: 35px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 15;
-      }
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        transition-duration: .25s; 
-        background-color: #2B8E2D;
-      }
-      .menu__btn > span::before {
-        content: '';
-        top: -8px;
-        }
-
-      .menu__btn > span::after {
-        content: '';
-        top: 8px;
-      }
-      .menu__box {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 300px;
-        height: 100%;
-        margin: 0;
-        padding: 80px 0;
-        list-style: none;
-        background-color: #f4ff9e;
-        border-right: solid #2B8E2D 2px;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-        transition-duration: .25s;
-        z-index: 14;
-      }
-      .menu__item {
-        display: block;
-        padding: 12px 36px;
-        color: #2B8E2D;
-        font-family: "Poppins", sans-serif;
-        font-size: 16px;
-        text-decoration: none;
-        transition-duration: .25s;
-
-      }
-      .menu__item:hover {
-        color: #1c781d;
-      }
-
-
-    .menu {
-        display: flex;
-    }
-
-
-    #brand {
-
-        float: left;
-        display: fixed;
-        width: 10vw;
-        height: 15vh;
-        padding-left: 10%;
-    }
-
-    #logo {
-
-        z-index: 10;
-        border-radius: 4px;
-        width: 40px;
-        position: fixed;
-        top: 20px;
-        left: 0;
-        right: 0;
-        margin: auto;
-
-    }
-
-}
-
-a:link.botao {
-    color: #E6FFBB;
-    text-decoration: none;
-}
-
-a:visited.botao {
-    color: #E6FFBB;
-    text-decoration: none;
-}
-
-p.claro {
-
-    color: #E6FFBB;
-    background-color: #2B8E2D;
-    border-radius: 5%;
-    width: 70vw;
-    height: 25px;
-    vertical-align: middle;
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-    margin-top: 45px;
-}
-
-/* CODIGOS RELACIONADOS À NEWSLETTER */
-
-#brasil {
-    width: 100%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
-
-#brasilintro {
-    text-align: center;
-    color: #2B8E2D;
-    position: relative;
-    width: 73vw;
-    height: auto;
-    padding-left: 12vw;
-    padding-right: 13vw;
-    padding-top: 150px;
-
-}
-
-img.mapa {
-
-    width: 60vw;
-    height: auto;
-    align-content: center;
-    aspect-ratio: auto;
-    padding-top: 30px;
-}
-
-#regiao {
-    width: 100%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    padding-top: 30px;
-}
-
-#regiaotexto {
-    text-align: center;
-    color: #2B8E2D;
-    position: relative;
-    width: 73vw;
-    padding-left: 12vw;
-    padding-right: 13vw;
-    padding-top: 10vh;
-    height: auto;
-    margin-bottom: 100px;
-
-}
-
-p {
-
-    font-family: "Poppins", sans-serif;
-    line-height: 22px;
+#logo {
+
+    z-index: 1200;
+    border-radius: 4px;
+    width: 50px;
+    position: fixed;
+    left: 50px;
+    top: 20px;
 
 }
 
 #subir {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     width: 50px;
     height: 50px;
     background-color: #2B8E2D;
@@ -579,266 +181,131 @@ p {
     z-index: 10;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #E6FFBB;
+    z-index: 7;
+}
 
-/* 1024 em diante - desktops ou qualquer outras telas maiores */
-@media screen and (min-width:767px) {
-
-    #wrapper {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-    }
-
-    /* CODIGOS RELACIONADOS À NAVEGAÇÃO */
-    nav {
-        position: fixed;
-        width: 100%;
-        height: 80px;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-        background-color: #E6FFBB;
-        z-index: 7;
-    }
+ul {
+    padding: 15%;
+    padding-top: 20px;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
 
-    #brand {
-
-        float: left;
-        display: fixed;
-        width: 10vw;
-        height: 10vh;
-        padding-left: 10%;
-    }
-
-    #logo {
-
-        z-index: 10;
-        border-radius: 4px;
-        width: 50px;
-        position: fixed;
-        left: 50px;
-        top: 20px;
-
-    }
-
-    ul {
-        padding: 15%;
-        padding-top: 20px;
-        text-align: center;
-        list-style-type: none;
-        overflow: hidden;
-        margin-right: 10%;
-    }
-
-
-    li {
-        float: left;
-        display: block;
-    }
-
-    li a {
-        display: block;
-        color: #2B8E2D;
-        text-align: center;
-        padding: 12px;
-        margin-left: 20px;
-        text-decoration: none;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    div.hamburger-menu {
-        display: none;
-    }
-
-
-    ul li:last-child {
-
-        position: absolute;
-        right: 10%;
-
-    }
-
-    #subir {
-        position: fixed;
-        bottom: 50px;
-        right: 50px;
-        width: 50px;
-        height: 50px;
-        background-color: #2B8E2D;
-        border-radius: 100%;
-        z-index: 10;
-    }
-
-    /* CODIGOS RELACIONADOS À PRIMEIRA TELA */
-
-    h1 {
-        font-family: "Poppins", sans-serif;        
-        line-height: 30px;
-    }
-
-    p {
-
-        font-family: "Poppins", sans-serif;        
-        line-height: 22px;
-
-    }
-
-    p.subtitulo {
-
-        font-family: "Poppins", sans-serif;        
-        font-size: 18px;
-        text-align: center;
-        padding-top: 12px;
-        padding-bottom: 30px;
-
-    }
-
-    /* COMO QUE FAZ PRA CENTRALIZAR NESSE FUNDOOOOOOOOOO */
-
-    p.claro {
-
-        color: #E6FFBB;
-        background-color: #2B8E2D;
-        border-radius: 5%;
-        width: 25vw;
-        height: 45px;
-        display: inline-block;
-        text-align: center;
-        padding: 5px;
-        margin-top: 45px;
-    }
-
-    /* CODIGOS RELACIONADOS À SEGUNDA TELA */
-
-    #brasil {
-        width: 100%;
-        height: auto;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
-
-    #brasilintro {
-        text-align: center;
-        color: #2B8E2D;
-        position: relative;
-        width: 73vw;
-        height: auto;
-        padding-left: 12vw;
-        padding-right: 13vw;
-        padding-top: 16vh;
-
-    }
+}
 
-    #regiao {
-        width: 100%;
-        height: auto;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
 
-    #regiaotexto {
-        text-align: center;
-        color: #2B8E2D;
-        position: relative;
-        width: 73vw;
-        padding-left: 12vw;
-        padding-right: 13vw;
-        padding-top: 10vh;
-        height: auto;
-        margin-bottom: 100px;
+li {
+    float: left;
+    display: block;
+}
 
-    }
+li a {
+    display: block;
+    color: #2B8E2D;
+    text-align: center;
+    padding: 12px;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
+ul li:last-child {
 
+    position: absolute;
+    right: 10%;
 
-    /* como centralizar isso */
-    h2 {
-        color: #2B8E2D;
-        font-size: 32px;
-        text-align: center;
-    }
+}
 
-    img.mapa {
+#instrucao {
 
-        width: 400px;
-        height: auto;
-        align-content: center;
-        aspect-ratio: auto;
-        padding-top: 50px;
-    }
+    padding-top: 250px;
+}
 
-    /* pq q essa praga nao ta floatando*/
+h2 {
+    color: #2B8E2D;
+    font-size: 32px;
+    text-align: center;
+}
 
-    /* CODIGOS RELACIONADOS AO FOOTER */
+p.subtitulo {
 
-    #grama {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 30px;
 
-        position: relative;
-        display: block;
-        width: 100%;
-        clear: both;
-        height: 20vh;
-        background-image: url(../imagens/grama_2.svg);
-        background-repeat: repeat-x;
+}
 
-    }
+#grama {
 
-    footer {
-        color: #E6FFBB;
-        background-color: #2B8E2D;
-        position: relative;
-        clear: both;
-        width: 100%;
-        height: 22vh;
-    }
+    position: absolute;
+    clear: both;
+    width: 100%;
+    height: 20vh;
+    background-image: url(../imgs/grama_2.svg);
+    background-repeat: repeat-x;
+    bottom: 22vh;
 
-    div.footer {
+}
 
-        text-align: left;
-        padding-left: 17vw;
-        padding-top: 20px;
-    }
+footer {
+    color: #E6FFBB;
+    background-color: #2B8E2D;
+    position: absolute;
+    clear: both;
+    width: 100%;
+    height: 22vh;
+    bottom: -250px;
+}
 
-    div.ftab {
+div.footer {
 
-        width: 18vw;
-        height: 13vh;
-        float: left;
+    text-align: left;
+    padding-left: 17vw;
+    padding-top: 20px;
+}
 
-    }
+div.ftab {
 
-    h6 {
+    width: 18vw;
+    height: 13vh;
+    float: left;
 
-        font-weight: bold;
-        font-size: 12pt;
+}
 
-    }
+h6 {
 
-    p.footer {
+    font-weight: bold;
+    font-size: 12pt;
 
-        font-family: "Poppins", sans-serif;        
-        text-align: left;
+}
 
-    }
+p.footer {
 
-    a:link.foot {
-        color: #E6FFBB;
-        text-decoration: none;
-    }
+    font-family: "Poppins", sans-serif;
+    text-align: left;
 
-    a:visited.foot {
-        color: #E6FFBB;
-        text-decoration: none;
-    }
+}
 
-    a:hover.foot {
+a:link.foot {
+    color: #E6FFBB;
+    text-decoration: none;
+}
 
-        color: rgb(203, 255, 112);
+a:visited.foot {
+    color: #E6FFBB;
+    text-decoration: none;
+}
 
-    }
+a:hover.foot {
 
+    color: rgb(203, 255, 112);
 
 }
