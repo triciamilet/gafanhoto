@@ -12,18 +12,18 @@ let secondCard = false;
 
 //Items array
 const items = [
-    { name: "coelho", image: "../imagenss/coelho.png" },
-    { name: "elefante", image: "../imagenss/elefante.png" },
-    { name: "polvo", image: "../imagenss/polvo.png" },
-    { name: "crocodilo", image: "../imagenss/crocodilo.png" },
-    { name: "camaleao", image: "../imagenss/camaleao.png" },
-    { name: "ra", image: "../imagenss/ra.png" },
-    { name: "caranguejo", image: "../imagenss/caranguejo.png" },
-    { name: "flamingo", image: "../imagenss/flamingo.png" },
-    { name: "peixe-palhaco", image: "../imagenss/peixe-palhaco.png" },
-    { name: "tigre", image: "../imagenss/tigre.png" },
-    { name: "morsa", image: "../imagenss/morsa.png" },
-    { name: "panda", image: "../imagenss/panda.png" },
+    { name: "coelho", image: "../imagens/coelho.png" },
+    { name: "elefante", image: "../imagens/elefante.png" },
+    { name: "polvo", image: "../imagens/polvo.png" },
+    { name: "crocodilo", image: "../imagens/crocodilo.png" },
+    { name: "camaleao", image: "../imagens/camaleao.png" },
+    { name: "ra", image: "../imagens/ra.png" },
+    { name: "caranguejo", image: "../imagens/caranguejo.png" },
+    { name: "flamingo", image: "../imagens/flamingo.png" },
+    { name: "peixe-palhaco", image: "../imagens/peixe-palhaco.png" },
+    { name: "tigre", image: "../imagens/tigre.png" },
+    { name: "morsa", image: "../imagens/morsa.png" },
+    { name: "panda", image: "../imagens/panda.png" },
     
 ];
 
