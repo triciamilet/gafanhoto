@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -12,8 +12,7 @@ html {
 
 body {
     background-color: #E6FFBB;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
 
 /* até 1024 - celular e tablets*/
@@ -105,7 +104,7 @@ body {
         display: block;
         padding: 12px 36px;
         color: #2B8E2D;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         text-decoration: none;
         transition-duration: .25s;
@@ -164,7 +163,7 @@ body {
 
     p.subtitulo {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 15px;
         font-weight: bold;
         text-align: center;
@@ -276,21 +275,21 @@ body {
 
     p.apresentacao {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 22px;
         text-align: center;
 
     }
 
     h1 {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 30px;
         text-align: center;
     }
 
     p {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 22px;
         text-align: center;
 
@@ -298,7 +297,7 @@ body {
 
     p.footer {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         text-align: left;
 
     }
@@ -627,13 +626,13 @@ input.submit {
     }
 
     h1 {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 30px;
     }
 
     p.apresentacao {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 22px;
         text-align: left;
 
@@ -641,7 +640,7 @@ input.submit {
 
     p {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 22px;
         text-align: center;
 
@@ -776,7 +775,7 @@ input.submit {
 
     p.subtitulo {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;        
         font-size: 18px;
         text-align: center;
         padding-top: 12px;
@@ -968,7 +967,7 @@ input.submit {
 
     p.footer {
 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Poppins", sans-serif;        
         text-align: left;
 
     }
