@@ -12,18 +12,18 @@ let secondCard = false;
 
 //Items array
 const items = [
-    { name: "coelho", image: "../imgs/coelho.png" },
-    { name: "elefante", image: "../imgs/elefante.png" },
-    { name: "polvo", image: "../imgs/polvo.png" },
-    { name: "crocodilo", image: "../imgs/crocodilo.png" },
-    { name: "camaleao", image: "../imgs/camaleao.png" },
-    { name: "ra", image: "../imgs/ra.png" },
-    { name: "caranguejo", image: "../imgs/caranguejo.png" },
-    { name: "flamingo", image: "../imgs/flamingo.png" },
-    { name: "peixe-palhaco", image: "../imgs/peixe-palhaco.png" },
-    { name: "tigre", image: "../imgs/tigre.png" },
-    { name: "morsa", image: "../imgs/morsa.png" },
-    { name: "panda", image: "../imgs/panda.png" },
+    { name: "coelho", image: "../imagenss/coelho.png" },
+    { name: "elefante", image: "../imagenss/elefante.png" },
+    { name: "polvo", image: "../imagenss/polvo.png" },
+    { name: "crocodilo", image: "../imagenss/crocodilo.png" },
+    { name: "camaleao", image: "../imagenss/camaleao.png" },
+    { name: "ra", image: "../imagenss/ra.png" },
+    { name: "caranguejo", image: "../imagenss/caranguejo.png" },
+    { name: "flamingo", image: "../imagenss/flamingo.png" },
+    { name: "peixe-palhaco", image: "../imagenss/peixe-palhaco.png" },
+    { name: "tigre", image: "../imagenss/tigre.png" },
+    { name: "morsa", image: "../imagenss/morsa.png" },
+    { name: "panda", image: "../imagenss/panda.png" },
     
 ];
 
@@ -89,7 +89,7 @@ const matrixGenerator = (cardValues, size = 4) => {
         <div class="card-container" data-card-value="${cardValues[i].name}">
         <div class="card-before">?</div>
         <div class="card-after">
-        <img src="${cardValues[i].image}" class="image"/></div>
+        <imagens src="${cardValues[i].image}" class="image"/></div>
         </div>
         `;
     }
