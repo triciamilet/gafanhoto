@@ -55,13 +55,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid #000000;
+    border: 4px solid #2B8E2D;
     transition: transform 0.7s ease-out;
     backface-visibility: hidden;
 }
 
 .card-before {
-    background-color: #2B8E2D;
+    background-color: #f4ff9e;
     font-size: 2.8em;
     font-weight: 600;
 }
