@@ -46,12 +46,12 @@ const timeGenerator = () => {
     }
     let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
     let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
-    timeValue.innerHTML = `<span>Tempo:</span>${minutesValue}:${secondsValue}`;
+    timeValue.innerHTML = `<span>Tempo: </span>${minutesValue}:${secondsValue}`;
 };
 
 const movesCounter = () => {
     movesCount += 1;
-    moves.innerHTML = `<span>Movimentos:</span>${movesCount}`;
+    moves.innerHTML = `<span>Movimentos: </span>${movesCount}`;
 };
 
 //Pick random objects from the items array
